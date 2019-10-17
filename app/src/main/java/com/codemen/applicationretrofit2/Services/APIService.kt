@@ -1,4 +1,4 @@
-package com.codemen.applicationretrofit2
+package com.codemen.applicationretrofit2.Services
 
 import retrofit2.Call
 import retrofit2.http.GET

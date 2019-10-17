@@ -5,6 +5,9 @@ import android.os.Bundle
 import android.view.inputmethod.InputMethodManager
 import androidx.appcompat.widget.SearchView
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.codemen.applicationretrofit2.Adapter.DogsAdapter
+import com.codemen.applicationretrofit2.Services.APIService
+import com.codemen.applicationretrofit2.Services.DogsResponse
 import kotlinx.android.synthetic.main.activity_main.*
 import org.jetbrains.anko.alert
 import org.jetbrains.anko.doAsync
@@ -16,7 +19,7 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener {
 
 
     lateinit var imagesPuppies:List<String>
-    lateinit var dogsAdapter:DogsAdapter
+    lateinit var dogsAdapter: DogsAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

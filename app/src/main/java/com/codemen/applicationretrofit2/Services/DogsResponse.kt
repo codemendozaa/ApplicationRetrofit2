@@ -1,4 +1,4 @@
-package com.codemen.applicationretrofit2
+package com.codemen.applicationretrofit2.Services
 
 import com.google.gson.annotations.SerializedName
 

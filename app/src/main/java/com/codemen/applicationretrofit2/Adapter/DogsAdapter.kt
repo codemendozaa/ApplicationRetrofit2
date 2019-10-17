@@ -1,10 +1,12 @@
-package com.codemen.applicationretrofit2
+package com.codemen.applicationretrofit2.Adapter
 
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.codemen.applicationretrofit2.R
+import com.codemen.applicationretrofit2.helpers.fromUrl
 import kotlinx.android.synthetic.main.item_dog.view.*
 
 class DogsAdapter (val images: List<String>) : RecyclerView.Adapter<DogsAdapter.ViewHolder>() {
@@ -16,7 +18,13 @@ class DogsAdapter (val images: List<String>) : RecyclerView.Adapter<DogsAdapter.
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
-        return ViewHolder(layoutInflater.inflate(R.layout.item_dog, parent, false))
+        return ViewHolder(
+            layoutInflater.inflate(
+                R.layout.item_dog,
+                parent,
+                false
+            )
+        )
     }
 
     override fun getItemCount(): Int {
